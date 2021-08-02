@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find My Neighbors</title>
+    <!-- Linked CSS File (From https://bootswatch.com/)-->
+    <link rel="stylesheet" href="quartz.min.css" />
+
+    <!-- Linked JavaScript File -->
+    <script src="app.js" type="text/javascript" defer></script>
+  </head>
+  <body class="d-flex vh-100 text-center text-white bg-dark">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <main class="px-3">
+        <h1>Find Your Neighbouring Capital Cities</h1>
+        <p class="lead my-2">
+          Fun little tool to find a country's capital city as well as it's neighbouring countries capital cities.
+        </p>
+        <div class="input-group mb-3">
+          <input
+            class="form-control"
+            list="countryList"
+            aria-label="Search"
+            id="search"
+            placeholder="Enter country name..."
+          />
+            <button class="btn btn-secondary" type="button" id="clearBtn" onclick="reset()">Reset</button>
+
+        </div>
+        <div id="capCitiesResults" class="lead my-2"></div>
+        <div id="countryList"></div>
+      </main>
+
+      <footer class="mt-auto text-white-50">
+        <p>
+          Built by
+          <a href="https://github.com/ShivamSabbarwal" class="text-white">Shivam Sabbarwal</a>.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
